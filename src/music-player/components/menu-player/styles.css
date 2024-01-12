@@ -1,0 +1,38 @@
+.menu-player-actions{
+    display: flex;
+    flex-direction: row;
+    gap: 51px;
+    margin-bottom: 29px;
+}
+
+.menu-player-progress-bar{
+    height: 6px;
+    border-radius:10px;
+    opacity: 0.3;
+    background-color: #D9D9D9;
+}
+
+.menu-player-progress {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.menu-player-progress-time{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    p {
+        color: #C4C4CC;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; 
+        margin-top: 9px;
+        margin-top: 0;
+
+    }
+}

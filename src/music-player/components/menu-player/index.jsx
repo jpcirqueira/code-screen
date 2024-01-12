@@ -10,7 +10,7 @@ const MenuPlayer = ({
 }) => {
 
     return (
-        <div>
+        <div className='menu-player-content'>
             <div className="menu-player-actions">
                 <img src={PlayBackIcon} />
                 <img src={PlayIcon} />

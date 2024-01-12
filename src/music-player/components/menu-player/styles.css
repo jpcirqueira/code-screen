@@ -1,3 +1,10 @@
+.menu-player-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu-player-actions{
     display: flex;
     flex-direction: row;

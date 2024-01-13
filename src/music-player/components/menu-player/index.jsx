@@ -8,6 +8,7 @@ const MenuPlayer = ({
     startTime,
     finishTime
 }) => {
+    const hasTimes = startTime && finishTime;
 
     return (
         <div className='menu-player-content'>
@@ -16,13 +17,15 @@ const MenuPlayer = ({
                 <img src={PlayIcon} />
                 <img src={PlayForwardIcon} />
             </div>
-            <div className="menu-player-progress">
-                <div className="menu-player-progress-bar"/>
-                <div className="menu-player-progress-time">
-                    <p>{startTime}</p>
-                    <p>{finishTime}</p>
+            {hasTimes && 
+                <div className="menu-player-progress">
+                    <div className="menu-player-progress-bar"/>
+                    <div className="menu-player-progress-time">
+                        <p>{startTime}</p>
+                        <p>{finishTime}</p>
+                    </div>
                 </div>
-            </div>
+            }
         </div>
     )
 }

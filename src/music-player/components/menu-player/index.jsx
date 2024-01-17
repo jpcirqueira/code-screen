@@ -11,16 +11,17 @@ const MenuPlayer = ({
     const hasTimes = startTime && finishTime;
 
     return (
-        <div className='menu-player-content'>
-            <div className="menu-player-actions">
+        
+        <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-row gap-12 mb-7">
                 <img src={PlayBackIcon} />
                 <img src={PlayIcon} />
                 <img src={PlayForwardIcon} />
             </div>
             {hasTimes && 
-                <div className="menu-player-progress">
+                <div className="flex flex-col w-full">
                     <div className="menu-player-progress-bar"/>
-                    <div className="menu-player-progress-time">
+                    <div className="flex w-full justify-between">
                         <p>{startTime}</p>
                         <p>{finishTime}</p>
                     </div>

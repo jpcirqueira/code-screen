@@ -20,10 +20,10 @@ const MenuPlayer = ({
             </div>
             {hasTimes && 
                 <div className="flex flex-col w-full">
-                    <div className="menu-player-progress-bar"/>
-                    <div className="flex w-full justify-between">
-                        <p>{startTime}</p>
-                        <p>{finishTime}</p>
+                    <div className="bg-medium h-1.5 rounded-xl opacity-30"/>
+                    <div className="flex w-full justify-between mt-1">
+                        <p className='text-sm text-light mt-0'>{startTime}</p>
+                        <p className='text-sm text-light mt-0'>{finishTime}</p>
                     </div>
                 </div>
             }

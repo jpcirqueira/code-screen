@@ -2,8 +2,6 @@ import PlayBackIcon from '../../images/play-back.svg';
 import PlayForwardIcon from '../../images/play-forward.svg';
 import PlayIcon from '../../images/play.svg';
 
-import './styles.css';
-
 const MenuPlayer = ({
     startTime,
     finishTime
